@@ -21,7 +21,7 @@ export const DATA = {
   description:
     "Web Developer with experience building apps using React, Next.js, and TypeScript. Passionate about building scalable and efficient web applications.",
   summary:
-    "I'm a web developer based in Honduras who loves building apps, I manage web apps, JWT verification and SQL databases. I'm currently studying Computer Engineering at the Technological University of Honduras. Passionate about learning about my stack and challenges.",
+    "I'm a web developer based in **Honduras** who loves building apps, I manage web apps, JWT verification and SQL databases. I'm currently studying Computer Engineering at the Technological University of Honduras. Passionate about learning about my stack and challenges.",
   avatarUrl: "/me.png",
   skills: [
     { name: "React", icon: ReactLight },
@@ -44,13 +44,13 @@ export const DATA = {
 
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://linkedin.com/in/marlon-sandoval",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       email: {
-        name: "Send Email",
+        name: "Send me an Email!",
         url: "mailto:gabriel.sandoval6111@gmail.com",
         icon: Icons.email,
 
