@@ -2,8 +2,6 @@ import Link from "next/link";
 import { FlickeringGrid } from "@/components/magicui/flickering-grid";
 import { DATA } from "@/data/resume";
 import { Dock, DockIcon } from "@/components/magicui/dock";
-import { ModeToggle } from "@/components/mode-toggle";
-import { Separator } from "@/components/ui/separator";
 import {
   Tooltip,
   TooltipArrow,
