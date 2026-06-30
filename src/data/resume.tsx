@@ -1,5 +1,5 @@
-/** 
- * Data for resume text 
+/**
+ * Data for resume text
  */
 
 import { Icons } from "@/components/icons";
@@ -13,14 +13,14 @@ import { Docker } from "@/components/ui/svgs/docker";
 export const DATA = {
   name: "Marlon Sandoval",
   initials: "MS",
-  url: "https://mgsandoval.xmz",
+  url: "https://mgsandoval.xyz",
   location: "La Ceiba, Honduras",
-  locationLink: "https://www.google.com/maps/place/laceiba",
+  locationLink: "https://www.google.com/maps/place/la+ceiba+atlantida",
   description:
     "Web Developer with experience building apps using React, Next.js, and TypeScript. Passionate about building scalable and efficient web applications.",
   summary:
     "I'm a web developer based in **Honduras** who loves building apps, I manage web apps, JWT verification and SQL databases. I'm currently studying Computer Engineering at the Technological University of Honduras. Passionate about learning about my stack and challenges.",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
@@ -28,9 +28,7 @@ export const DATA = {
     { name: "Node.js", icon: Nodejs },
     { name: "Docker", icon: Docker },
   ],
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     social: {
       GitHub: {
@@ -131,6 +129,7 @@ export const DATA = {
         "Designed and implemented a robust password encryption and browser cookie storage system in Ruby on Rails. Leveraged the Yahoo finance API to develop the dividend.com equity screener",
     },
   ],
+
   education: [
     {
       school: "Buildspace",
@@ -165,128 +164,88 @@ export const DATA = {
       end: "2016",
     },
   ],
+
   projects: [
     {
-      title: "Chat Collect",
+      title: "Pafisa App",
       href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      dates: "November 2025 - Present",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "Pafisa is an app which handles product quality and warehouse stock transferring with the integration of SAP B1.",
       technologies: [
-        "Next.js",
+        "Next",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Express",
+        "JavaScript",
+        "ASP.NET",
+        "C#",
+        "MSSQL",
+        "SAP Business One",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+      // links: [
+      //   {
+      //     type: "Website",
+      //     href: "https://chatcollect.com",
+      //     icon: <Icons.globe className="size-3" />,
+      //   },
+      // ],
+      // image: "pafisa.png",
+      // video: "",
     },
+
     {
-      title: "Magic UI",
+      title: "Marketer Surveys",
       href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      dates: "June 2026 - Present",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "Surveys app made for Difiesta marketers. Manages user roles and surveys.",
       technologies: [
-        "Next.js",
+        "Next",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Express",
+        "JavaScript",
+        "MSSQL",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      // links: [
+      //   {
+      //     type: "Website",
+      //     href: "https://magicui.design",
+      //     icon: <Icons.globe className="size-3" />,
+      //   },
+      // ],
+      // image: "",
+      // video: "",
     },
+
     {
-      title: "llm.report",
+      title: "Month Closures Dashboard",
       href: "https://llm.report",
-      dates: "April 2023 - September 2023",
+      dates: "November 2025 - March 2026",
       active: true,
       description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
+        "Dashboard that has last two months closures data, allows to filter by month. Has a Honduras map page to view data by department/state.",
       technologies: [
-        "Next.js",
+        "Next",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
         "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
+        "MUI",
+        "JavaScript",
+        "MSSQL",
+        "MongoDB",
       ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      // links: [
+      //   {
+      //     type: "Website",
+      //     href: "https://llm.report",
+      //     icon: <Icons.globe className="size-3" />,
+      //   },
+      // ],
+      // image: "",
+      // video: "",
     },
   ],
 } as const;
