@@ -2,7 +2,7 @@
 title: "Month Closures Dashboard"
 summary: "Dashboard that has last two months closures data, allows to filter by month. Has a Honduras map page to view data by department/state."
 dates: "November 2025 - March 2026"
-confidential: true
+confidential: false
 stack: ["Next", "Typescript", "TailwindCSS", "MUI", "JavaScript", "MSSQL", "MongoDB"]
 ---
 
@@ -10,10 +10,22 @@ stack: ["Next", "Typescript", "TailwindCSS", "MUI", "JavaScript", "MSSQL", "Mong
 
 {/* What was broken or missing before this dashboard existed? */}
 
+Difiesta wanted to look at its month-closures finances by company branch for comparing sales results of the past 2 months, but there 
+was no way  to see the sales results without a query to the database. Also, they wanted to see the results of each Honduras
+department.
+
+
 ## What I built
 
 {/* Your role, the architecture, the map/filtering implementation. */}
+As the Difiesta's software developer, I made a dashboard web app where the users of the company can log in and see the results
+of the company by branch. They can filter by month to check the results of each branch.
+
+I built a map dashboard where the company can filter and select the Honduras map to check sales by department and by municipality.
+
 
 ## Outcome
 
 {/* Impact: who uses it, what decisions it supports, etc. */}
+The company checks the sales results at the end of the month, they check results looking at the dashboard by company branch, 
+and they compare sales results by Honduras departments and municipalities.

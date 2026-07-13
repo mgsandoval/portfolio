@@ -47,7 +47,7 @@ export const DATA = {
   projects: [
     {
       title: "Pafisa App",
-      href: "https://chatcollect.com",
+      href: undefined,
       slug: "pafisa-app",
       dates: "November 2025 - Present",
       active: true,
@@ -71,7 +71,7 @@ export const DATA = {
 
     {
       title: "Marketer Surveys",
-      href: "https://magicui.design",
+      href: "undefined",
       slug: "marketer-surveys",
       dates: "June 2026 - Present",
       active: true,
@@ -92,7 +92,7 @@ export const DATA = {
 
     {
       title: "Month Closures Dashboard",
-      href: "https://llm.report",
+      href: undefined,
       slug: "month-closures-dashboard",
       dates: "November 2025 - March 2026",
       active: true,

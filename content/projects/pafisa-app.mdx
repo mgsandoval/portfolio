@@ -8,20 +8,46 @@ stack: ["Next", "Typescript", "TailwindCSS", "Express", "JavaScript", "ASP.NET",
 
 ## The problem
 
-{/* What was broken or missing before this app existed? */}
-hola
+{/* What was broken or missing before this dashboard existed? */}
+
+Pafisa es una empresa de fabricación de papel higiénico y servilletas, la empresa no tenía cómo medir la calidad de sus productos.
+
+Pafisa tampoco tenía un control sobre las tarimas de papel higiénico y servilletas, ni una interfaz amigable en donde pudieran
+hacer traslados de stock en SAP Business One de una forma sencilla.
+
+El seguimiento de los productos se llevaba en hojas de Microsoft Excel y se tenían que ingresar manualmente, lo que resultaba en 
+errores por parte de los operarios.
+
 
 ## What I built
 
 {/* Your role, the architecture, the trickiest part of wiring into SAP B1. */}
-como está
+
+He construido un sistema web en donde se puedan ingresar cada uno de los parámetros de los productos que fabrican en Pafisa.
+El operario ingresa los parámetros de cada producto y automáticamente se calcula el porcentaje de calidad del producto ingresado,
+se toma una fotografía del producto y se guarda.
+
+El sistema también permite un mejor control sobre las tarimas de los productos de la empresa, con una interfaz amigable en donde
+se puede hacer traslados de stock en SAP B1 con facilidad, y, sobretodo, mantener orden con los datos ingresados.
+
+El sistema cuenta con historiales por área, auditoría por área, roles de usuario, manejo de usuarios y permisos por usuario.
+
 
 ## Outcome
 
 {/* Impact: time saved, errors reduced, teams using it, etc. */}
-si
 
-> This case study is marked `confidential: true` since it's internal company work.
-> Keep the write-up to what you solved and decided — skip screenshots, data, or
-> anything under NDA. Duplicate this file for other projects and match the
-> filename (minus `.mdx`) to the `slug` in `src/data/resume.tsx`.
+Los errores por parte de los operarios se redujeron, los tiempos de ingreso de productos se redujeron, y los operarios se encuentran
+usando un sistema que les parece muy sencillo de utilizar, incluso si no tienen tanta experiencia tecnológica.
+
+La información de cada producto es resguardada en una base de datos y los usuarios que tengan los respectivos permisos pueden 
+consultarla o modificarla, lo que garantiza que solo quienes tengan permisos otorgados por los administradores pueden manipular
+la información.
+
+Las transferencias de stock a SAP Business One se ingresan fácilmente, mucho más que en el software del ERP.
+
+- Errores manuales reducidos
+- Tiempo de ingreso por producto reducido
+- Sistema sencillo y fácil de usar
+- Sistema confiable para los administradores
+- Transferencias de stock de SAP B1 mucho más sencillas de ingresar
