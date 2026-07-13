@@ -2,17 +2,26 @@
 "use client";
 
 import { Badge } from "@/components/ui/badge";
+import { ProjectPlaceholder } from "@/components/project-placeholder";
 import { cn } from "@/lib/utils";
 import { ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 import Markdown from "react-markdown";
 
-function ProjectImage({ src, alt }: { src: string; alt: string }) {
+function ProjectImage({
+  src,
+  alt,
+  tags,
+}: {
+  src: string;
+  alt: string;
+  tags: readonly string[];
+}) {
   const [imageError, setImageError] = useState(false);
 
   if (!src || imageError) {
-    return <div className="w-full h-48 bg-muted" />;
+    return <ProjectPlaceholder title={alt} tags={tags} />;
   }
 
   return (
@@ -54,6 +63,8 @@ export function ProjectCard({
   links,
   className,
 }: Props) {
+  const isExternal = href?.startsWith("http");
+
   return (
     <div
       className={cn(
@@ -64,8 +75,7 @@ export function ProjectCard({
       <div className="relative shrink-0">
         <Link
           href={href || "#"}
-          target="_blank"
-          rel="noopener noreferrer"
+          {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
           className="block"
         >
           {video ? (
@@ -78,9 +88,9 @@ export function ProjectCard({
               className="w-full h-48 object-cover"
             />
           ) : image ? (
-            <ProjectImage src={image} alt={title} />
+            <ProjectImage src={image} alt={title} tags={tags} />
           ) : (
-            <div className="w-full h-48 bg-muted" />
+            <ProjectPlaceholder title={title} tags={tags} />
           )}
         </Link>
         {links && links.length > 0 && (
@@ -113,8 +123,7 @@ export function ProjectCard({
           </div>
           <Link
             href={href || "#"}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
             className="text-muted-foreground hover:text-foreground transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
             aria-label={`Open ${title}`}
           >

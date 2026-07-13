@@ -48,6 +48,7 @@ export const DATA = {
     {
       title: "Pafisa App",
       href: "https://chatcollect.com",
+      slug: "pafisa-app",
       dates: "November 2025 - Present",
       active: true,
       description:
@@ -63,20 +64,15 @@ export const DATA = {
         "MSSQL",
         "SAP Business One",
       ],
-      // links: [
-      //   {
-      //     type: "Website",
-      //     href: "https://chatcollect.com",
-      //     icon: <Icons.globe className="size-3" />,
-      //   },
-      // ],
-      // image: "pafisa.png",
-      // video: "",
+      links: undefined,
+      image: "/pafisa.png",
+      video: undefined,
     },
 
     {
       title: "Marketer Surveys",
       href: "https://magicui.design",
+      slug: "marketer-surveys",
       dates: "June 2026 - Present",
       active: true,
       description:
@@ -89,20 +85,15 @@ export const DATA = {
         "JavaScript",
         "MSSQL",
       ],
-      // links: [
-      //   {
-      //     type: "Website",
-      //     href: "https://magicui.design",
-      //     icon: <Icons.globe className="size-3" />,
-      //   },
-      // ],
-      // image: "",
-      // video: "",
+      links: undefined,
+      image: undefined,
+      video: undefined,
     },
 
     {
       title: "Month Closures Dashboard",
       href: "https://llm.report",
+      slug: "month-closures-dashboard",
       dates: "November 2025 - March 2026",
       active: true,
       description:
@@ -116,15 +107,9 @@ export const DATA = {
         "MSSQL",
         "MongoDB",
       ],
-      // links: [
-      //   {
-      //     type: "Website",
-      //     href: "https://llm.report",
-      //     icon: <Icons.globe className="size-3" />,
-      //   },
-      // ],
-      // image: "",
-      // video: "",
+      links: undefined,
+      image: undefined,
+      video: undefined,
     },
   ],
 } as const;
