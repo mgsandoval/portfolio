@@ -36,7 +36,7 @@ export const DATA = {
       },
       email: {
         name: "Send me an Email!",
-        url: "mailto:gabriel.sandoval6111@gmail.com",
+        url: "mailto:gabriel.sandoval6111@gmail.com?subject=Hello%20Marlon!%20I%20found%20you%20on%20your%20portfolio...",
         icon: Icons.email,
 
         navbar: true,
