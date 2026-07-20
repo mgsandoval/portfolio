@@ -40,6 +40,8 @@ const projects = defineCollection({
         dates: z.string().optional(),
         confidential: z.boolean().optional(),
         stack: z.array(z.string()).optional(),
+        images: z.array(z.string()).optional(),
+        video: z.string().optional(),
         content: z.string(),
     }),
     transform: async (document, context) => {

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { MDXContent } from "@content-collections/mdx/react";
 import { mdxComponents } from "@/mdx-components";
 import { Badge } from "@/components/ui/badge";
+import { ProjectMediaGallery } from "@/components/project-media-gallery";
 import Link from "next/link";
 import { ChevronLeft, ArrowUpRight } from "lucide-react";
 
@@ -129,6 +130,11 @@ export default async function ProjectCaseStudy({
       <article className="prose max-w-full text-pretty font-sans leading-relaxed text-muted-foreground dark:prose-invert">
         <MDXContent code={project.mdx} components={mdxComponents} />
       </article>
+      <ProjectMediaGallery
+        title={project.title}
+        images={project.images}
+        video={project.video}
+      />
     </section>
   );
 }
