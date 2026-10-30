@@ -41,7 +41,7 @@ export default function ContactSection() {
             an email
           </Link>
           {". "}
-          I'll be happy to answer!
+          I&apos;ll be happy to answer!
         </p>
         <Dock className="z-50 pointer-events-auto relative h-14 p-2 w-fit mx-auto flex gap-2 border bg-card/90 backdrop-blur-3xl shadow-[0_0_10px_3px] shadow-primary/5">
           {Object.entries(DATA.contact.social)

@@ -23,7 +23,7 @@ export default function ProjectsSection() {
               Check out my latest work
             </h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              I've worked on a bunch of projects, from simple websites to larger applications. Here are a few of them.
+              I&apos;ve worked on a bunch of projects, from simple websites to larger applications. Here are a few of them.
             </p>
           </div>
         </div>

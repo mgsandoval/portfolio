@@ -7,22 +7,44 @@ stack: ["Next", "Typescript", "TailwindCSS", "Express", "JavaScript", "ASP.NET",
 images: ["/pafisa.png", "/pafisa.png", "/pafisa.png", "/pafisa.png", "/pafisa.png"]
 ---
 
-## The problem
+# About Pafisa
+**Pafisa** is a **manufacturer of toilet paper and napkins** based in San Pedro Sula, Honduras; the company has several areas, which are the quality, warehouse, production and maintenance areas, each one with several problems and where the app I built solves problems inside each area.
 
-{/* What was broken or missing before this dashboard existed? */}
 
-Pafisa is a manufacturer of toilet paper and napkins; the company had no way to measure the quality of its products.
+# The problems inside the Quality area
+{/* Which where the problems the company had before this app existed? */}
 
-Pafisa also lacked control over its pallets of toilet paper and napkins, as well as a user-friendly interface where they could
-easily transfer inventory in SAP Business One.
+- The company had **no way to measure the quality of its products produced in each production line**, considering parameters like weight, height and diameter
+- The company had **no way manage product scraps and leftovers**, how much quantity where they wasting, and how much and what products can they recycle and reuse
+- Scraps: there was **no way to manage initial products and final products**
+- Leftovers: there was **no way to manage what kind of leftover** and track how much weight the product had
 
-Product tracking was done using Microsoft Excel spreadsheets, and data had to be entered manually, which resulted in 
-errors on the part of the operators.
+## What I built
+{/* Your role, the architecture, the trickiest part of wiring into SAP B1. */}
+**I built dashboards** where managers can easily track the quality of their toilet paper and napkins products as operators enter the data into the app. Here, they can view charts showing the **number of entries, average tolerance levels, and who entered data for each product**.
+
+**I built an easy way** where operators enter product data into their respective forms, where they **must meet all the requirements for adding the product**; based on the information entered, the product quality will be calculated according to its established parameters and tolerances. They are also required to submit a photograph of the product they are entering.
+
+**I solved the problem** of the managers, where they can take track of every product with dashboards, filtering across products and between dates and hours. They also have access to every form history and they can **audit what operators and users enters into the app**.
+
+## The outcome
+The outcome of what I built is an **easy and manageable** way to enter the products data according to each one's parameters and tolerances, **calculates the quality percentage of each product** and easily stores images, providing the operators a better solution than the manual entering data they where doing before.
+
+**Operators easily manage leftovers and scraps** of every products they use.
+
+**Managers can easily take track of the enterprise's products** and see what the operators and other users do inside the app with the auditing.
+
+The app manages users, roles and permissions for each user registered into the app.
+
+# The problem inside the Warehouse area
+
+# The problem inside the Production area
+
+# The problem inside the Maintenance area
 
 
 ## What I built
 
-{/* Your role, the architecture, the trickiest part of wiring into SAP B1. */}
 
 I have built a web-based system where users can enter each of the parameters for the products manufactured by Pafisa.
 The operator enters the parameters for each product, and the system automatically calculates the quality percentage of the entered product;
@@ -34,7 +56,7 @@ stock transfers can be easily made in SAP B1 and, above all, the entered data ca
 The system includes history reports by area, audits by area, user roles, user management, and user permissions.
 
 
-## Outcome
+# Outcome
 
 {/* Impact: time saved, errors reduced, teams using it, etc. */}
 
