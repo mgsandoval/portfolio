@@ -49,7 +49,7 @@ export const DATA = {
   projects: [
     {
       title: "Pafisa App",
-      href: undefined,
+      href: "/pafisa-app",
       slug: "pafisa-app",
       dates: "November 2025 - Present",
       active: true,
