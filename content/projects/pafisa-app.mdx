@@ -8,69 +8,69 @@ images: ["/pafisa.png", "/pafisa.png", "/pafisa.png", "/pafisa.png", "/pafisa.pn
 ---
 
 # About Pafisa
-**Pafisa** is a **manufacturer of toilet paper and napkins** based in San Pedro Sula, Honduras; the company has several areas, which are the quality, warehouse, production and maintenance areas, each one with several problems and where the app I built solves problems inside each area.
-
+**Pafisa** is a **manufacturer of toilet paper and napkins** based in San Pedro Sula, Honduras; the company has several areas, which are quality, warehouse, production and maintenance areas, each one with problems where the system I built solves them.
 
 # The problems inside the Quality area
-{/* Which where the problems the company had before this app existed? */}
-
-- The company had **no way to measure the quality of its products produced in each production line**, considering parameters like weight, height and diameter
-- The company had **no way manage product scraps and leftovers**, how much quantity where they wasting, and how much and what products can they recycle and reuse
+El área de calidad se encarga de manejar y mantener la calidad de los productos, desperdicios y segundas.
+- There was **no way to measure the quality of its products** produced in each production line, considering parameters like weight, height and diameter.
+- There was **no way to manage product scraps and leftovers**, how much quantity where they wasting, and how much and what products can they recycle and reuse
 - Scraps: there was **no way to manage initial products and final products**
 - Leftovers: there was **no way to manage what kind of leftover** and track how much weight the product had
 
 ## What I built
-{/* Your role, the architecture, the trickiest part of wiring into SAP B1. */}
-**I built dashboards** where managers can easily track the quality of their toilet paper and napkins products as operators enter the data into the app. Here, they can view charts showing the **number of entries, average tolerance levels, and who entered data for each product**.
+**I built dashboards** where managers can easily take track of the quality of their products.
 
-**I built an easy way** where operators enter product data into their respective forms, where they **must meet all the requirements for adding the product**; based on the information entered, the product quality will be calculated according to its established parameters and tolerances. They are also required to submit a photograph of the product they are entering.
+**I built an easy way** where operators enter product data, products **must enter the data product according to parameters**.
 
-**I solved the problem** of the managers, where they can take track of every product with dashboards, filtering across products and between dates and hours. They also have access to every form history and they can **audit what operators and users enters into the app**.
+**I solved the problem** of the managers, where they can take track of every product with dashboards, filtering across products and between dates and hours.
 
 ## The outcome
-The outcome of what I built is an **easy and manageable** way to enter the products data according to each one's parameters and tolerances, **calculates the quality percentage of each product** and easily stores images, providing the operators a better solution than the manual entering data they where doing before.
+
+The outcome of what I built is an **easy and manageable** way to enter the products data according to each one's parameters and tolerances, **calculating the quality percentage of each product**.
+
+Operators enter data easily into the app instead of manually entering data.
 
 **Operators easily manage leftovers and scraps** of every products they use.
 
-**Managers can easily take track of the enterprise's products** and see what the operators and other users do inside the app with the auditing.
+**Managers easily take track of the enterprise's products** and see what the operators and other users do inside the app with the auditing.
 
 The app manages users, roles and permissions for each user registered into the app.
 
-# The problem inside the Warehouse area
-
-# The problem inside the Production area
-
-# The problem inside the Maintenance area
-
+# The problems inside the Warehouse area
+The warehouse department is responsible for the movement of products between warehouses.
+- There was no way to manage or track the process of **loading and unloading products onto trucks**.
+- There was no way to manage the **tracking numbers** used by the trucks.
+- Product **order batches** could not be tracked.
+- There was no way to securely and automatically **enter this data into SAP**.
 
 ## What I built
+- I've developed an easy way to track every p**roduct loading and unloading process on trucks**; this requires a label code and a barcode.
+- The labels are **easy to manage**; they can be added, modified, or deleted.
+- The barcodes can be sent to a **Zebra printer** to be printed and affixed to the pallet containing the products to be loaded or unloaded.
+- I have implemented a **Zebra printer management system** that connects to
+
+# The problem inside the Production area
+The production area is where the coils used to manufacture Pafisa’s products are moved and consumed.
+- Coil consumption and movement were managed through SAP, using a **tedious and confusing graphical interface**.
+- Production orders are also **managed through SAP**.
+- **Only supervisors have access to SAP**.
+- There was **no way to store records of coil data, consumption, movements, or production orders** in a database.
+
+## What I built
+I have created a simple form so that operators now have an **easy way to enter data for production orders**, which are then processed in SAP and saved in the database.
+Operators can **safely transfer coils between warehouses in SAP**.
+Once all data entry is complete, it is **sent to the supervisor** to confirm that the consumption figures are correct; **if they are, the supervisor approves it**, and if not, the supervisor rejects it.
+Once it is accepted, the production order is released in SAP and marked as completed.
 
 
-I have built a web-based system where users can enter each of the parameters for the products manufactured by Pafisa.
-The operator enters the parameters for each product, and the system automatically calculates the quality percentage of the entered product;
-a photograph of the product is taken and saved.
+# The problem inside the Maintenance area
+The incident management area allows to manage incidents and maintenance issues that may arise throughout the day with the machines on the production lines.
+- If the machines had to be **shut down or restarted, there was no way to record it**.
+- There was **no way to record who performed maintenance**.
+- There was **no way to record what type of maintenance was performed or what replacement parts the technicians used**.
 
-The system also allows for better control over the company’s product pallets, with a user-friendly interface where
-stock transfers can be easily made in SAP B1 and, above all, the entered data can be kept organized.
-
-The system includes history reports by area, audits by area, user roles, user management, and user permissions.
-
-
-# Outcome
-
-{/* Impact: time saved, errors reduced, teams using it, etc. */}
-
-Operator errors have been reduced, product entry times have been shortened, and operators are
-using a system they find very easy to use, even if they don’t have much technical experience.
-
-Information for each product is stored in a database, and users with the appropriate permissions can 
-view or modify it, ensuring that only those granted permissions by administrators can manipulate
-the information.
-
-Stock transfers to SAP Business One are easily entered, much more so than in the ERP software.
-
-- Reduced manual errors
-- Reduced entry time per product
-- Simple and user-friendly system
-- Reliable system for administrators
-- SAP B1 stock transfers are much easier to enter
+## What I built
+- I have **developed a solution for incident management**: operators can log a shutdown or startup, or schedule them for the time they request.
+- I have **resolved the maintenance issue for technicians**: they can create a new maintenance task and must enter the names of those involved.
+- The application **records the type of maintenance and the replacement parts used**.
+- In addition, it **tracks both in-house technicians and external technicians**.
