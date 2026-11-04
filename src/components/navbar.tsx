@@ -1,5 +1,5 @@
-/** 
- * Navigation Bar component, with Home button, social media and theme toggler 
+/**
+ * Navigation Bar component, with Home button, social media and theme toggler
  */
 
 import { Dock, DockIcon } from "@/components/magicui/dock";

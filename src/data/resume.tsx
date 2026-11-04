@@ -17,7 +17,9 @@ export const DATA = {
     "I'm a web developer based in **Honduras** who loves building apps, I manage web apps, JWT verification and SQL databases. I'm currently studying Computer Engineering at the Technological University of Honduras. Passionate about learning about my stack and challenges.",
   avatarUrl: "/me.jpg",
   
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home", navbar: true },
+  ],
   contact: {
     social: {
       GitHub: {
@@ -66,49 +68,6 @@ export const DATA = {
       ],
       links: undefined,
       image: "/pafisa.png",
-      video: undefined,
-    },
-
-    {
-      title: "Marketer Surveys",
-      href: "undefined",
-      slug: "marketer-surveys",
-      dates: "June 2026 - Present",
-      active: true,
-      description:
-        "Surveys app made for Difiesta marketers. Manages user roles and surveys.",
-      technologies: [
-        "Next",
-        "Typescript",
-        "TailwindCSS",
-        "Express",
-        "JavaScript",
-        "MSSQL",
-      ],
-      links: undefined,
-      image: undefined,
-      video: undefined,
-    },
-
-    {
-      title: "Month Closures Dashboard",
-      href: undefined,
-      slug: "month-closures-dashboard",
-      dates: "November 2025 - March 2026",
-      active: true,
-      description:
-        "Dashboard that has last two months closures data, allows to filter by month. Has a Honduras map page to view data by department/state.",
-      technologies: [
-        "Next",
-        "Typescript",
-        "TailwindCSS",
-        "MUI",
-        "JavaScript",
-        "MSSQL",
-        "MongoDB",
-      ],
-      links: undefined,
-      image: undefined,
       video: undefined,
     },
   ],
